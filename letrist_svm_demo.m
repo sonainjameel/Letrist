@@ -1,0 +1,9 @@
+load('Train_Letrist_Feature')
+load('Test_Letrist_Feature')
+load('Train_Letrist_Label')
+load('Test_Letrist_Label')
+SVMModel=fitcsvm(Train_Letrist_Feature,Train_Letrist_Label);
+[label,score]=predict(SVMModel,Test_Letrist_Feature);
+label=label';
+Test_Letrist_Label=Test_Letrist_Label';
+plotconfusion(label,Test_Letrist_Label)
