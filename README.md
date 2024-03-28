@@ -1,1 +1,1 @@
-# Letrist
+# Letrist for Feature Extraction
